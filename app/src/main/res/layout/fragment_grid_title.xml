@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_title_TextView"
+        android:textSize="@dimen/size_text_grid_title"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:lines="2"
+        android:fontFamily="serif"
+        android:textColor="@color/color_black"
+        android:text="N° d'étude"/>
+
+
+</LinearLayout>

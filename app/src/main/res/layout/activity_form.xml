@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_grid"
+    tools:context="tounzcompagny.agingplanning.Main.PlanningActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_form_for_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_button_top"
+            android:background="@color/color_background_green"
+            android:padding="@dimen/padding_grid">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Etude"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_text_grid_title" />
+
+            <ImageButton
+                android:id="@+id/form_button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/icon_close" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_grid"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/form_n_study"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="N° d'étude"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_n_study_customer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="N° d'étude client"
+                android:padding="@dimen/padding_form_edittext" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_grid"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/form_customer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Nom du client"
+                android:padding="@dimen/padding_form_edittext" />
+
+
+            <EditText
+                android:id="@+id/form_n_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="N° téléphone"
+                android:padding="@dimen/padding_form_edittext" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_button_top"
+            android:layout_marginTop="@dimen/margin_button_top"
+            android:background="@color/color_background_green"
+            android:padding="@dimen/padding_grid">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Echantillons / Test"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_text_grid_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_grid">
+
+            <EditText
+                android:id="@+id/form_nb_sample"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Nb échantillon"
+                android:padding="@dimen/padding_form_edittext" />
+
+
+            <EditText
+                android:id="@+id/form_date_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Date d'entrée"
+                android:padding="@dimen/padding_form_edittext" />
+
+
+            <EditText
+                android:id="@+id/form_nb_day_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Nb jrs entrée"
+                android:maxLines="1"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_nb_day_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Nb jrs sortie"
+                android:maxLines="1"
+                android:padding="@dimen/padding_form_edittext" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_grid">
+
+
+            <EditText
+                android:id="@+id/form_test"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Nom du test"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_total_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Nb jrs total"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_n_chamber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="N° d'étuve"
+                android:maxLines="1"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_type_cycle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Type calcul"
+                android:maxLines="1"
+                android:padding="@dimen/padding_form_edittext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_grid">
+
+            <EditText
+                android:id="@+id/form_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Remarque"
+                android:maxLines="1"
+                android:padding="@dimen/padding_form_edittext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_button_top"
+            android:layout_marginBottom="@dimen/margin_button_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_background_green"
+            android:padding="@dimen/padding_grid">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Position / Détails"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_text_grid_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_grid">
+
+
+            <EditText
+                android:id="@+id/form_position"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Positions éch"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_size_sample"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Taille éch"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_thickness_sample"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Epaisseur éch"
+                android:padding="@dimen/padding_form_edittext" />
+
+            <EditText
+                android:id="@+id/form_responsible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button_top"
+                android:layout_weight="1"
+                android:background="@color/color_background_grid_odd"
+                android:hint="Responsable"
+                android:padding="@dimen/padding_form_edittext" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

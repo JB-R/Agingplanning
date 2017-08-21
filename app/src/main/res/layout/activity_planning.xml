@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tounzcompagny.agingplanning.Main.PlanningActivity">
+
+    <LinearLayout
+        android:id="@+id/fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
+
+        <include
+            layout="@layout/fragment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_each_test"
+        android:layout_below="@+id/fragment_title"
+        android:layout_marginBottom="@dimen/padding_grid"
+        android:layout_marginLeft="@dimen/padding_grid"
+        android:layout_marginRight="@dimen/padding_grid"
+        android:layout_marginTop="@dimen/padding_grid"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/grid_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <GridView
+            android:id="@+id/grid_study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_each_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_grid"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/fragment_each_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

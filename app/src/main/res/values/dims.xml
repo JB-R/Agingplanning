@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_text_grid_title">18dp</dimen>
+    <dimen name="size_text_grid_study">15dp</dimen>
+    <dimen name="size_text_title">40dp</dimen>
+    <dimen name="padding_grid">5dp</dimen>
+    <dimen name="margin_button_top">20dp</dimen>
+    <dimen name="elevation_form">10dp</dimen>
+    <dimen name="radius_title">20dp</dimen>
+    <dimen name="radius_grid">10dp</dimen>
+    <dimen name="width_stroke">2dp</dimen>
+    <dimen name="width_edittext">250dp</dimen>
+    <dimen name="padding_form_edittext">10dp</dimen>
+
+
+</resources>
