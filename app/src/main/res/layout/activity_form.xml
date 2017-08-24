@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_form"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/padding_grid"
@@ -8,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/layout_form_for_size"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
@@ -229,10 +230,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="@dimen/margin_button_top"
-            android:layout_marginBottom="@dimen/margin_button_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_button_top"
+            android:layout_marginTop="@dimen/margin_button_top"
             android:background="@color/color_background_green"
             android:padding="@dimen/padding_grid">
 

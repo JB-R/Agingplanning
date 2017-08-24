@@ -1,25 +1,23 @@
 package tounzcompagny.agingplanning.Main;
 
+import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import java.sql.Date;
 import java.util.ArrayList;
 
 import tounzcompagny.agingplanning.DataBase.DatabaseHandler;
-import tounzcompagny.agingplanning.UI.AdapterStudy;
-import tounzcompagny.agingplanning.UI.AdapterTitle;
-import tounzcompagny.agingplanning.R;
 import tounzcompagny.agingplanning.Objects.State;
 import tounzcompagny.agingplanning.Objects.Study;
+import tounzcompagny.agingplanning.R;
+import tounzcompagny.agingplanning.UI.AdapterStudy;
+import tounzcompagny.agingplanning.UI.AdapterTitle;
 import tounzcompagny.agingplanning.UI.PopForm;
-import tounzcompagny.agingplanning.DataBase.DatabaseHandler;
 
 public class PlanningActivity extends AppCompatActivity {
 
@@ -28,6 +26,7 @@ public class PlanningActivity extends AppCompatActivity {
     private GridView gridTitle;
     private GridView gridStudy;
     private ArrayList<Study> arrayStudy;
+    private Context context;
     private Study study1 = new Study("MEA17 259", "Riom JB", 8, new Date(117, 5, 30), 0, 5, new Date(117, 6, 5), 1326, "BSC", State.TERMINER);
     private Study study2 = new Study("MEA17 260", "Riom JB", 8, new Date(117, 5, 30), 0, 5, new Date(117, 6, 5), 1326, "BSC", State.TERMINER);
     private Study study3 = new Study("MEA17 261", "Riom JB", 8, new Date(117, 5, 30), 0, 5, new Date(117, 6, 5), 1326, "BSC", State.TERMINER);
@@ -49,6 +48,8 @@ public class PlanningActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planning);
+
+        context = this;
 
         gridTitle = (GridView) findViewById(R.id.grid_title);
         gridStudy = (GridView) findViewById(R.id.grid_study);
@@ -86,6 +87,7 @@ public class PlanningActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(PlanningActivity.this, PopForm.class));
+
             }
         });
 
@@ -107,13 +109,5 @@ public class PlanningActivity extends AppCompatActivity {
         dataBase.addStudy(study14);
         dataBase.addStudy(study15);
         */
-
-        //read database
-
-        dataBase.deleteAllData();
-
-        int nbLineDB = dataBase.getCountData();
-
-
     }
 }
